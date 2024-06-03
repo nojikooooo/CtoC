@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CtoCApplication<CtoC>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "solekia.CtoC.CtoCApplication",
+            "projectName": "CtoC",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

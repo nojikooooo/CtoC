@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購入画面</title>
+</head>
+
+<body>
+
+
+     <form method="post" action="/furima/insert" th:action="@{/furima/insert}" th:object="${page}">
+        <h1>購入画面</h1>
+
+        <!-- 編集画面に苗字、名前、メールアドレスの欄を表示 -->
+        <input type="hidden" th:field="${page.customer_id}" th:value="${page.customer_id}">
+        <h5>氏名（必須）</h5>  
+        <input type="text" th:field="${page.customer_name}" th:value="${page.customer_name}">
+
+        <h5>メールアドレス（必須）</h5>
+        <input type="text" th:field="${page.customer_mail}" th:value="${page.customer_mail}"> 
+        <button type="submit">購入する</button>
+
+
+    </form>
+
+
+</body>
+
+</html>
